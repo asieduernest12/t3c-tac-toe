@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC12FD982C86035400A303B4 /* CannonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12FD972C86035400A303B4 /* CannonView.swift */; };
+		AC12FD9D2C860C6900A303B4 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AC12FD9C2C860C6900A303B4 /* ConfettiSwiftUI */; };
 		AC721FC22C85B56000F63AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC721FC12C85B56000F63AA2 /* AppDelegate.swift */; };
 		AC721FC42C85B56000F63AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC721FC32C85B56000F63AA2 /* SceneDelegate.swift */; };
 		AC721FC62C85B56000F63AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC721FC52C85B56000F63AA2 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC12FD972C86035400A303B4 /* CannonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannonView.swift; sourceTree = "<group>"; };
 		AC721FBE2C85B56000F63AA2 /* t3c-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "t3c-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC721FC12C85B56000F63AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC721FC32C85B56000F63AA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC12FD9D2C860C6900A303B4 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				AC721FCA2C85B56100F63AA2 /* Assets.xcassets */,
 				AC721FCC2C85B56100F63AA2 /* LaunchScreen.storyboard */,
 				AC721FCF2C85B56100F63AA2 /* Info.plist */,
+				AC12FD972C86035400A303B4 /* CannonView.swift */,
 			);
 			path = "t3c-tac-toe";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "t3c-tac-toe";
+			packageProductDependencies = (
+				AC12FD9C2C860C6900A303B4 /* ConfettiSwiftUI */,
+			);
 			productName = "t3c-tac-toe";
 			productReference = AC721FBE2C85B56000F63AA2 /* t3c-tac-toe.app */;
 			productType = "com.apple.product-type.application";
@@ -102,7 +110,7 @@
 				};
 			};
 			buildConfigurationList = AC721FB92C85B56000F63AA2 /* Build configuration list for PBXProject "t3c-tac-toe" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = AC721FB52C85B56000F63AA2;
+			packageReferences = (
+				AC12FD9B2C860C6900A303B4 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = AC721FBF2C85B56000F63AA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC12FD982C86035400A303B4 /* CannonView.swift in Sources */,
 				AC721FC62C85B56000F63AA2 /* ViewController.swift in Sources */,
 				AC721FC22C85B56000F63AA2 /* AppDelegate.swift in Sources */,
 				AC721FC42C85B56000F63AA2 /* SceneDelegate.swift in Sources */,
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4875Z3YLB;
 				INFOPLIST_FILE = "t3c-tac-toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4875Z3YLB;
 				INFOPLIST_FILE = "t3c-tac-toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC12FD9B2C860C6900A303B4 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC12FD9C2C860C6900A303B4 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC12FD9B2C860C6900A303B4 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC721FB62C85B56000F63AA2 /* Project object */;
 }
