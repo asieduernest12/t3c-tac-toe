@@ -175,9 +175,9 @@ class _T3cTacToeGameState extends State<T3cTacToeGame> {
       ),
       ConfettiWidget(
         confettiController: confettiController,
-        blastDirection: -pi /2 ,
-        maxBlastForce: 50,
-        gravity: 0.5,
+        maxBlastForce: 80,
+        gravity: 0.9,
+        numberOfParticles: 30,
         blastDirectionality: BlastDirectionality.explosive,
       ),
     ]);
