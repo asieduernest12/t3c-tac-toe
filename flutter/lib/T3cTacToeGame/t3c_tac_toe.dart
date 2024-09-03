@@ -104,7 +104,6 @@ class _T3cTacToeGameState extends State<T3cTacToeGame> {
   void initState() {
     super.initState();
     _initializeBoard();
-    confettiController.play();
   }
 
   @override
